@@ -1,0 +1,56 @@
+.container{
+
+    width: 600px;
+    margin: auto;
+    
+}
+
+#header{
+    /* margin-top: 0; */
+    padding: 10px;
+    text-align: center;
+    color: white;
+    width:100%;
+    height: 60px;
+    background-color: orange;
+}
+.formTest{
+    margin:0 0 0 20px;
+    align-content: center;
+}
+
+#resListCard{
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 380px;
+    height:auto;
+    /* border-bottom: 1px solid #eaeaea; */
+    border-top: 1px solid #eaeaea;
+}
+
+.resName{
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF6347;
+}
+.resLocation, .resCuisine{
+    font-size: 14px;
+    padding: 2px;
+    color:#999;
+}
+
+.stars{
+    float: right;
+    align-content: flex-end;
+    font-size: 1em;
+    color: #FF6347;
+    padding: 0;
+}
+
+img{
+    width: 80px;
+    height: 72px;
+    border-radius: 5px;
+}
