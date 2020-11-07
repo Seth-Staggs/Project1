@@ -1,7 +1,7 @@
-var zipZone = ""
-var foodType = ""
-var foodRating = 0
-var foodPrice = ""
+var foodRating = ['1', '2' , '3' , '4' , '5']
+var foodPrice = ''
+
+
 
 
 // Function to run Ajax call for resturaunt information
@@ -19,6 +19,18 @@ function ajaxCall() {
       console.log(data);
     }
   })
+  var zipZone = $('#location').val()
+  var foodType = $("#food-type").val()
+  var foodRating = $('#food-rating').val()
+  var foodPrice = $('#food-price').val()
+  console.log('------------------------------')
+  console.log('Zip: ' + zipZone)
+  console.log('------------------------------')
+  console.log('Food Type: ' + foodType)
+  console.log('------------------------------')
+  console.log('Rating : ' + foodRating)
+  console.log('------------------------------')
+  console.log('Price : ' + foodPrice)
 }
 
 // Click listner to run ajax call
