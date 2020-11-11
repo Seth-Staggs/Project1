@@ -4,60 +4,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </script.crossOrigin>
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" crossOrigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" <link rel="stylesheet"
+    href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-
-<title>Document</title>
+  <title>Restaurant App</title>
 </head>
 
- <body> 
+<body>
   <header>
     <h1>Flavor Town</h1>
   </header>
 
-<div class="container">
-  <div class="row">
-  <h2>I'm looking for food in...</h2>
-</div>
- 
-<form class="pure-form pure-form-stacked">
-    <fieldset class="pure-group">
-        <input type="text" class="pure-input-1-2" placeholder="Location" />
-        <input type="text" class="pure-input-1-2" placeholder="Search for food type" />
-    </fieldset>
+  <div class="container">
+    <div class="row">
+      <h2>I'm looking for food in...</h2>
+      <div id="wrapper">
+        <form class="pure-form pure-form-stacked">
+          <fieldset class="pure-group">
+            <input type="text" class="pure-input-1" placeholder="Location" />
+            <input type="text" class="pure-input-1" placeholder="Search for food type" />
+          </fieldset>
 
-    <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Search</button>
-  </form>
-
-
-<form class="pure-form">
-  <fieldset>
-
-    <div class="pure-u-1-2">
-      <select id="multi-state" class="pure-input-1-2">
-        <option>Rating</option>
-        <option>4 stars</option>
-        <option>5 stars</option>
-    </select>
-
-    <div class="pure-u-1-4">
-      <select id="multi-state" class="pure-input-1-2">
-        <option>Price</option>
-        <option>$$</option>
-        <option>$$$</option>
-    </select>
-
-      
-  </fieldset>
-</form>
-  
-<form class="pure-form">
-      <label for="checkbox-radio-option-one" class="pure-checkbox">
-          <input type="checkbox" id="checkbox-radio-option-one" value="" /> Show me restaurant&#x27;s with a bar.</label>    
-  </form>
+          <button type="submit" class="pure-button pure-input-1 pure-button-primary">Search</button>
+        </form>
 
 
- </body>
+        <form class="pure-form pure-g">
+          <fieldset>
+
+            <!-- <div class="pure-u-md-1-2">
+              <select id="multi-state" class="pure-input-1">
+                <option>Rating</option>
+                <option>4 stars</option>
+                <option>5 stars</option>
+              </select>
+            </div>
+
+            <div class="pure-u-md-1-2">
+              <select id="multi-state" class="pure-input-1">
+                <option>Price</option>
+                <option>$$</option>
+                <option>$$$</option>
+              </select>
+            </div> -->
+          </fieldset>
+
+          <div class="pure-u-1-2">
+            <input type="text" class="pure-input-1" placeholder=".pure-u-1-2" />
+          </div>
+          <div class="pure-u-1-2">
+            <input type="text" class="pure-input-1" placeholder=".pure-u-1-2" />
+          </div>
+
+
+        </form>
+        <form class="pure-form">
+          <label for="checkbox-radio-option-one" class="pure-checkbox">
+            <input type="checkbox" id="checkbox-radio-option-one" value="" /> Show me restaurants with a
+            bar.</label>
+        </form>
+        <article id="resListCard">
+          <div class="pure-g">
+            <div class="pure-u-1-4">
+              <img src="./images/foodItemPlaceholder.png" alt="">
+            </div>
+            <div class="pure-u-1-2">
+              <div class="pure-u-1 pure-u-md-1-3 resName">Restaurant Name</div>
+              <div class="pure-u-1 pure-u-md-1-3 resLocation">Location</div>
+              <div class="pure-u-1 pure-u-md-1-3 resCuisine">Cuisine</div>
+            </div>
+            <div class="pure-u-1-1"><span class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
 </html>
