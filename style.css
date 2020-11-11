@@ -1,0 +1,26 @@
+header {
+    background: #333;
+  }
+h1 {
+    padding: 20px 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #eee;
+    text-align: center;
+  } 
+/* #container {
+   margin: center;
+
+  } */
+h2 {
+    text-align: center; 
+    font-size: 20px;
+}
+#pure-form {
+margin: center;
+align-content: center;
+}
+#pure-button {
+background-color: #333;
+}
