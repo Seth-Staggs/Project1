@@ -85,7 +85,12 @@ h2 {
     font-style: normal;
   }
 
+.resListCard {
+    visibility: hidden;
+}
+
 #resListCard{
+    visibility: hidden;
     margin: 0;
     padding: 10px;
     margin-bottom: 5px;
