@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Nanum+Brush+Script&display=swap"
+    rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Restaurant App</title>
+</head>
+
+<body>
+  <header class="headerStyle">
+    <h1>Flavor Town</h1>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <h2>I'm looking for food in...</h2>
+      <!-- <div id="wrapper"> -->
+      <form class="pure-form pure-form-stacked">
+        <fieldset class="pure-group">
+          <input type="text" class="pure-input-1" id="location" placeholder="Location" />
+          <!-- <i class="fa fa-lock fa-lg position-absolute"></i> -->
+          <input type="text" class="pure-input-1" id="food-type" placeholder="Search for food type" />
+        </fieldset>
+
+        <button type="submit" id="food-search" class="pure-button pure-input-1 pure-button-primary btnStyle">Search</button>
+
+      </form>
+      <form class="pure-form pure-g">
+        <div class="pure-u-1-2">
+          <select id="multi-state" id="food-rating" class="pure-input-1">
+            <option>Rating</option>
+            <option>4 stars</option>
+            <option>5 stars</option>
+          </select>
+        </div>
+
+        <div class="pure-u-1-2">
+          <select id="multi-state" id="food-price" class="pure-input-1">
+            <option>Price</option>
+            <option>$$</option>
+            <option>$$$</option>
+          </select>
+        </div>
+      </form>
+      <form class="pure-form">
+        <label for="checkbox-radio-option-one" class="pure-checkbox">
+          <input type="checkbox" id="checkbox-radio-option-one" value="" class="checkBox" /> Show me restaurants with a
+          bar</label>
+      </form>
+
+      <article class = 'resListCard' id="resListCard">
+        <div class="pure-g">
+          <div class="pure-u-1-5">
+            <img id= "resImg0" src="./images/foodItemPlaceholder.png" alt="">
+          </div>
+          <div class="pure-u-1-2">
+            <div class="pure-u-1 pure-u-md-1-3 resName" id = "resName0">Restaurant Name</div>
+            <div class="pure-u-1 pure-u-md-1-3 resLocation" id = "resLocation0">Location</div>
+            <div class="pure-u-1 pure-u-md-1-3 resCuisine" id = "resCuisine0">Cuisine</div>
+          </div>
+          <div class="pure-u-1-1"><span class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i>
+            </span></div>
+        </div>
+      </article>
+
+      <article class = 'resListCard' id="resListCard">
+        <div class="pure-g">
+          <div class="pure-u-1-5">
+            <img id= "resImg1" src="./images/foodItemPlaceholder.png" alt="">
+          </div>
+          <div class="pure-u-1-2">
+            <div class="pure-u-1 pure-u-md-1-3 resName" id = "resName1">Restaurant Name</div>
+            <div class="pure-u-1 pure-u-md-1-3 resLocation" id = "resLocation1">Location</div>
+            <div class="pure-u-1 pure-u-md-1-3 resCuisine" id = "resCuisine1">Cuisine</div>
+          </div>
+          <div class="pure-u-1-1"><span class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i>
+            </span></div>
+        </div>
+      </article>
+      <article class = 'resListCard' id="resListCard">
+        <div class="pure-g">
+          <div class="pure-u-1-5">
+            <img id= "resImg2" src="./images/foodItemPlaceholder.png" alt="">
+          </div>
+          <div class="pure-u-1-2">
+            <div class="pure-u-1 pure-u-md-1-3 resName" id = "resName2">Restaurant Name</div>
+            <div class="pure-u-1 pure-u-md-1-3 resLocation" id = "resLocation2">Location</div>
+            <div class="pure-u-1 pure-u-md-1-3 resCuisine" id = "resCuisine2">Cuisine</div>
+          </div>
+          <div class="pure-u-1-1"><span class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i>
+            </span></div>
+        </div>
+      </article>
+      <article class = 'resListCard' id="resListCard">
+        <div class="pure-g">
+          <div class="pure-u-1-5">
+            <img id= "resImg3" src="./images/foodItemPlaceholder.png" alt="">
+          </div>
+          <div class="pure-u-1-2">
+            <div class="pure-u-1 pure-u-md-1-3 resName" id = "resName3">Restaurant Name</div>
+            <div class="pure-u-1 pure-u-md-1-3 resLocation" id = "resLocation3">Location</div>
+            <div class="pure-u-1 pure-u-md-1-3 resCuisine" id = "resCuisine3">Cuisine</div>
+          </div>
+          <div class="pure-u-1-1"><span class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i>
+            </span></div>
+        </div>
+      </article>
+      <article class = 'resListCard' id="resListCard">
+        <div class="pure-g">
+          <div class="pure-u-1-5">
+            <img id= "resImg4" src="./images/foodItemPlaceholder.png" alt="">
+          </div>
+          <div class="pure-u-1-2">
+            <div class="pure-u-1 pure-u-md-1-3 resName" id = "resName4" >Restaurant Name</div>
+            <div class="pure-u-1 pure-u-md-1-3 resLocation" id = "resLocation4">Location</div>
+            <div class="pure-u-1 pure-u-md-1-3 resCuisine" id = "resCuisine4">Cuisine</div>
+          </div>
+          <div class="pure-u-1-1"><span class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i>
+            </span></div>
+        </div>
+      </article>
+      <form class="pure-form pure-form-stacked">
+        <button type="submit" class="pure-button pure-input-1 pure-button-primary fixed_button btnStyle">I'm Feeling
+          Lucky</button>
+      </form>
+      <!-- </div> -->
+    </div>
+  </div>
+
+
+  <script src="Assets/script.js"></script>
+</body>
+
+</html>
