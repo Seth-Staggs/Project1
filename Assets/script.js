@@ -36,17 +36,20 @@ function lonlat() {
         var zRating = zomatoData.restaurants[i].restaurant.user_rating.aggregate_rating
         var zCuisines = zomatoData.restaurants[i].restaurant.cuisines
         var zImg = zomatoData.restaurants[i].restaurant.thumb
+        var zLink = zomatoData.restaurants[i].restaurant.url
         $("#resName"+i).text(zNme);
         $("#resLocation"+i).text(zCity);
         $("#resCuisine"+i).text(zCuisines);
         $("#resImg"+i).attr("src", zImg);
         $('.resListCard').css( "visibility", "visible" );
+        $("#resImg"+i).wrap('<a href='+zLink+'>');
         console.log("-----------------")
         console.log(zCity);
         console.log(zNme);
         console.log(zRating);
         console.log(zCuisines);
         console.log(zImg)
+        console.log(zLink)
         console.log("-----------------")
         console.log(latLngData);
         console.log("-----------------");
